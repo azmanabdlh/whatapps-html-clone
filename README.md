@@ -17,7 +17,7 @@ make serve-compile
 5. Buka index.html pada folder `packages/browser/public`. Sebaliknya jika Anda menjalankan opsi kedua `make serve-compile`, silahkan buka alamat berikut di browser Anda `http://localhost:9191`
 
 
-6. Selanjutkan jalankan webserver nya. 
+6. Jalankan webserver nya. 
 ```bash
 make server-websocket
 ```
