@@ -19,7 +19,7 @@ make serve-compile
 
 6. Jalankan webserver nya. 
 ```bash
-make server-websocket
+make serve-websocket
 ```
 
 7. Selesai
