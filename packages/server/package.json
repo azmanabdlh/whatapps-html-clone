@@ -1,0 +1,17 @@
+{
+  "name": "@web/server",
+  "version": "1.0.0",
+  "author": "azman abdullah",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "serve": "bun run --watch index.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.2",
+    "bun": "^1.1.12"
+  },
+  "dependencies": {
+    "elysia": "^1.0.22"
+  }
+}

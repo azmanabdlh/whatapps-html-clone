@@ -7,8 +7,9 @@
   "author": "azman abdullah",
   "license": "MIT",
   "scripts": {    
-    "compile": "yarn workspace @frontend/web run compile",
-    "watch:compile": "yarn workspace @frontend/web run serve"
+    "compile": "yarn workspace @web/browser run compile",
+    "serve:compile": "yarn workspace @web/browser run serve",
+    "serve:websocket": "yarn workspace @web/server run serve"
   },
   "workspaces": {
     "packages": [

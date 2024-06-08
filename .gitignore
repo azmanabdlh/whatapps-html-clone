@@ -1,8 +1,8 @@
-packages/web/public
+packages/browser/public
 
-packages/web/node_modules
+packages/browser/node_modules
 packages/server/node_modules
 packages/node_modules
 node_modules
-packages/web/public
+packages/browser/public
 .DS_Store
