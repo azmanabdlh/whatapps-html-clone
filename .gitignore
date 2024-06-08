@@ -4,3 +4,5 @@ packages/web/node_modules
 packages/server/node_modules
 packages/node_modules
 node_modules
+packages/web/public
+.DS_Store
