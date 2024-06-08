@@ -22,4 +22,4 @@ make serve-compile
 make server-websocket
 ```
 
-5. Selesai
+7. Selesai
