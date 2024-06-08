@@ -1,0 +1,6 @@
+packages/web/public
+
+packages/web/node_modules
+packages/server/node_modules
+packages/node_modules
+node_modules
