@@ -1,3 +1,5 @@
+![demo](./demo.png)
+
 ### Install
 
 1. Download NodeJS + NPM. silahkan kunjungi [link](https://nodejs.org/en) untuk download
