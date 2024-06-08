@@ -1,12 +1,13 @@
 dep:
-	cd packages/web && yarn install
+	- cd packages/browser && yarn install
+	- cd packages/server && yarn install
 	
 compile:
-	cd packages && yarn install && yarn compile
+	cd packages && yarn compile
 
-watch-compile:
-	cd packages && yarn watch:compile
+serve-compile:
+	cd packages && yarn serve:compile
 
-serve:
-	cd packages && yarn serve
+serve-websocket:
+	cd packages && yarn serve:websocket
 

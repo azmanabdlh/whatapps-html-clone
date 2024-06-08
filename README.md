@@ -11,6 +11,15 @@ make dep
 // kedua
 make compile 
 // atau
-make watch-compile
+make serve-compile
 ```
+
+5. Buka index.html pada folder `packages/browser/public`. Sebaliknya jika Anda menjalankan opsi kedua `make serve-compile`, silahkan buka alamat berikut di browser Anda `http://localhost:9191`
+
+
+6. Selanjutkan jalankan webserver nya. 
+```bash
+make server-websocket
+```
+
 5. Selesai
