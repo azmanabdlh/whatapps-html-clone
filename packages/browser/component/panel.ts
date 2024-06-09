@@ -1,8 +1,9 @@
-import BaseElement from '@/component/base-element';
-import { el, html } from '@/utils/dom';
+import CustomElementClass from '@/component/custom-element';
+import { el, html, injectComponent } from '@/utils/dom';
 
 
-export default class MyPanel extends BaseElement {
+@injectComponent("panel-element")
+export default class MyPanel extends CustomElementClass {
 
   styles = `
     p {

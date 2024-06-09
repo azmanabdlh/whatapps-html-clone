@@ -1,7 +1,8 @@
-import BaseElement from '@/component/base-element';
-import { html } from '@/utils/dom';
+import CustomElementClass from '@/component/custom-element';
+import { html, injectComponent } from '@/utils/dom';
 
-export default class Sidebar extends BaseElement {
+@injectComponent("sidebar-list")
+export default class Sidebar extends CustomElementClass {
   render(): DocumentFragment {
     // your sidebar view html
     return  html`<p>Hello</p>`;

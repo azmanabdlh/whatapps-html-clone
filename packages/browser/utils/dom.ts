@@ -1,6 +1,9 @@
+import type { Constructor }  from "@/component/custom-element";
 
-function defineComponent(name: string, element: CustomElementConstructor): void {
-  customElements.define(name, element);
+
+
+function defineComponent(name: string, classOrTarget: Constructor<HTMLElement>): void {
+  customElements.define(name,  classOrTarget as CustomElementConstructor);
 }
 
 function el(name: string): HTMLElement {
@@ -19,7 +22,14 @@ function html(strings: TemplateStringsArray, ...values: any[]): DocumentFragment
   return template.content;
 }
 
-export {
-  el, defineComponent, html
-};
+// decorator
+export function injectComponent(name: string) {    
+  return function(classOrTarget: Constructor<HTMLElement>, context?: any) {    
+    defineComponent(name, classOrTarget);        
+  }
+}
 
+export {
+  el, html,
+  defineComponent,  
+};

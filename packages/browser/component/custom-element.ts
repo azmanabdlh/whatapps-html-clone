@@ -1,5 +1,11 @@
 
-export default abstract class BaseElement extends HTMLElement {
+
+export type Constructor<T> = {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  new (...args: any[]): T;
+};
+
+export default abstract class CustomElementClass extends HTMLElement {
   protected styles: string;
 
   constructor() {

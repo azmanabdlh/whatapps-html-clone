@@ -1,8 +1,9 @@
-import BaseElement from '@/component/base-element';
-import { html } from '@/utils/dom';
+import CustomElementClass from '@/component/custom-element';
+import { html, injectComponent } from '@/utils/dom';
 
-export default class SceneView extends BaseElement {
-  render(): DocumentFragment {
+@injectComponent("scene-view")
+export default class SceneView extends CustomElementClass {
+  render() {
     // your scene view html
     return  html`<p>scene view</p>`;
   }

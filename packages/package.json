@@ -8,13 +8,13 @@
   "license": "MIT",
   "scripts": {    
     "compile": "yarn workspace @web/browser run compile",
-    "serve:compile": "yarn workspace @web/browser run serve",
+    "serve:compile": "yarn workspace @web/browser run serve:compile",
     "serve:websocket": "yarn workspace @web/server run serve"
   },
   "workspaces": {
     "packages": [
       "server",
-      "web"
+      "browser"
     ] 
   } 
 }

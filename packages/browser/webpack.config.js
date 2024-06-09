@@ -3,13 +3,13 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   devtool: 'source-map',
-  entry: "./index.ts",
+  entry: "./index.ts",  
   module: {
     rules: [
       {
         test: /\.ts?$/,
-        use: "ts-loader",
-        exclude: /node_modules/,
+        loader: "ts-loader",
+        exclude: /node_modules/        
       }
     ],
   },
@@ -24,7 +24,7 @@ module.exports = {
       title: "example",
       template: './template.html',
       minify: true,
-    })
+    }),    
   ],
   output: {
     filename: "index.js",
