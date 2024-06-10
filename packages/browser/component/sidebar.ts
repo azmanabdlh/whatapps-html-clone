@@ -9,7 +9,8 @@ export default class Sidebar extends CustomElementClass {
     .sidebar {
       background-color: ${Colors.primary};
       box-sizing: border-box;
-      min-height: 100vh;      
+      height: 100vh;  
+      overflow: hidden;    
     }
     .sidebar .action {
       padding: .5rem;
@@ -33,7 +34,8 @@ export default class Sidebar extends CustomElementClass {
       
     .account-list {
       overflow: scroll;
-      height: 100vh;
+      height: 100vh;      
+      
     }
   `;
 
