@@ -6,26 +6,21 @@ import { el, html, injectComponent } from '@/utils/dom';
 export default class MyPanel extends CustomElementClass {
 
   styles = `
-    p {
-      color: red;
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 3fr;
+      min-height: 100vh;
+      width: 100%;
     }
   `;
 
   render() {
-    const content = html` 
-      <p>Helo</p>
+  
+    return html` 
+    <div class="container">
       <slot name="sidebar"></slot>
       <slot name="scene"></slot>
-      <p>Helo dunia</p>
-    `;
-    
-    const btn = el("button");
-    btn.textContent = "click";
-    btn.addEventListener("click", () => {
-      alert("click myPanel")
-    }); 
-
-    content.append(btn);
-    return content;
+    </div>      
+  `;;
   }
 }

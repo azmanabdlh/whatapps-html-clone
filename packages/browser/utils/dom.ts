@@ -12,7 +12,7 @@ function el(name: string): HTMLElement {
 
 function html(strings: TemplateStringsArray, ...values: any[]): DocumentFragment {
   const htmlString = strings.reduce((result, string, i) => {
-    return result  + (values[i] || '') + string;
+    return result  + string + (values[i] || '') ;
   }, '');
 
   const template = document.createElement('template');

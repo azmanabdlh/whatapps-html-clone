@@ -13,8 +13,12 @@ export default abstract class CustomElementClass extends HTMLElement {
     this.styles = '';
   }
 
-  connectedCallback(): void {
-    const shadow = this.attachShadow({ mode: "open"});    
+  protected register(): void {}
+
+  connectedCallback(): void {    
+    this.register();
+    
+    const shadow = this.attachShadow({ mode: "open"});
     shadow.innerHTML = `
       ${this.injectStyles()}
     `;
@@ -28,11 +32,14 @@ export default abstract class CustomElementClass extends HTMLElement {
   }
 
   protected injectStyles(): string {
-    if (this.styles.trim().length === 0) {
-      return '';
-    }
     return `
       <style>
+        * {
+          margin: 0;
+          padding: 0;
+          font-family: "KoHo", sans-serif;
+        }
+        
         ${this.styles}
       </style>
     `; 
