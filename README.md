@@ -11,9 +11,9 @@ Whatapps clone via websocket, html css js.
 
 ### Local
 1. Prerequisite project
-  * Download [NodeJS](https://nodejs.org/en) and then install NodeJS installer
+    * Download [NodeJS](https://nodejs.org/en) and then install NodeJS installer
 
-  * Download [Git](https://www.git-scm.com/) and then install installer
+    * Download [Git](https://www.git-scm.com/) and then install installer
 
 2. Download project via Git
 ```bash
