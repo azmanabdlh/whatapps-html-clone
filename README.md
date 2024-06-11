@@ -5,8 +5,8 @@ Whatapps clone via websocket, html css js.
 > The project was created for learning purposes
 
 ## Install
-* [Local](docker)
-* [Docker](Docker)
+* [Local](#local)
+* [Docker](#docker)
 
 
 ### Local
@@ -21,7 +21,7 @@ git clone https://github.com/azmanabdlh/whatsapp-html-clone.git
 ```
 3. Another option you can download manual this project via github.com.
 
-4. Open code editor `Visual Studio Code`, add project with drag and drop on your code editor.
+4. Open code editor `Visual Studio Code`, add project with drag and drop on code editor.
 
 5. Running the command
 ```bash
@@ -49,9 +49,9 @@ make serve-websocket
 8. Server done
 
 ### Docker
-1. Please install [Docker](https://www.docker.com/)
-2. After then install the Docker Installer
-3. Running the commmand
+1. Please install [Docker](https://www.docker.com/). then install the Docker Installer
+
+3. Running the command to build app
 ```bash
 make compose
 ```
