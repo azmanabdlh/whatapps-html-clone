@@ -7,7 +7,7 @@
   "scripts": {
     "serve:compile": "webpack-dev-server --mode development",
     "compile": "webpack --mode development",
-    "prod:compile:": "webpack --mode production"
+    "prod:compile": "webpack --mode production"
   },
   "devDependencies": {
     "html-webpack-plugin": "^5.6.0",

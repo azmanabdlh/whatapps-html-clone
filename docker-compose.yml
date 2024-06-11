@@ -1,0 +1,15 @@
+version: '3'
+services:
+  browser:
+    build:
+      context: ./packages/browser
+    ports:
+      - "80:80"
+    depends_on:
+      - server
+
+  server:
+    build:
+      context: ./packages/server
+    ports:
+      - "8181:8181"
