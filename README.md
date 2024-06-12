@@ -1,8 +1,16 @@
 ![demo](./demo.png)
 
 ## Overview
-Whatapps clone via websocket, html css js. 
+Simple WhatsApp clone using: Websocket | HTML | CSS | Typescript
 > The project was created for learning purposes
+
+## Flow
+
+### Connection
+![on connection](./on-connection.png)
+
+### Messaging
+![on message](./on-message.png)
 
 ## Install
 * [Local](#local)
